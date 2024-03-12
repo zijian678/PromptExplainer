@@ -6,7 +6,7 @@ PromptExplainer: Explaining Language Models through Prompt-based Learning (EACL 
 
 We provide two implementations:
 * Simple implementation: [PromptExplainer.ipynb](https://github.com/zijian678/PromptExplainer/blob/main/PromptExplainer.ipynb). Please note that this is just a simple implementation of PromptExplainer to help understand our framework more easily. For experimental comparison purposes, please follow our original paper to select the templates and verbalizers.
-* Integration into existing prompt-based learning frameworks. Taking the [OpenPrompt](https://github.com/thunlp/OpenPrompt) that provides available codes for multiple SOTA prompt-based models as an example, PromptExplainer can be implemented with a few lines of work by modifying the pipline_base.py. The **forward** function in the PromptForClassification - pipeline_base.py can be modified as:
+* Integration into existing prompt-based learning frameworks. Taking the [OpenPrompt](https://github.com/thunlp/OpenPrompt) that provides available codes for multiple SOTA prompt-based models as an example, PromptExplainer can be implemented with a few lines of work by modifying the pipline_base.py. The **forward** function in the PromptForClassification - pipeline_base.py can be modified as follwos. E is the obtained input saliency.
 
 ```
         outputs = self.prompt_model(batch)  # eqn 1
@@ -26,3 +26,7 @@ We provide two implementations:
         all_token_softmax = F.softmax(all_token_logits, dim=-1) # eqn 3
         E = all_token_softmax[:,:,i] # eqn 4, i is the class id
 ```
+## Reproduce
+
+Our results can be reproduced using [OpenPrompt](https://github.com/thunlp/OpenPrompt) and [KPT](https://github.com/thunlp/KnowledgeablePromptTuning). For the activation and pruning tasks, please follow [
+XAI_Transformers](https://github.com/AmeenAli/XAI_Transformers). We express our heartfelt gratitude to the authors for their outstanding contributions!
