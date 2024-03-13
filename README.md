@@ -1,6 +1,9 @@
 # PromptExplainer
 
-PromptExplainer: Explaining Language Models through Prompt-based Learning (EACL 2024)
+**PromptExplainer: Explaining Language Models through Prompt-based Learning (EACL 2024)**
+
+
+PromptExplainer explores using token distributions to explain masked language models such as BERT and RoBERTa. Our another work, TDD, utilizes token distributions to explain autoregressive LLMs. Welcome to check [TDD](https://github.com/zijian678/TDD)!
 
 ## Implementations
 
@@ -30,3 +33,17 @@ We provide two implementations:
 
 Our results can be reproduced using [OpenPrompt](https://github.com/thunlp/OpenPrompt) and [KPT](https://github.com/thunlp/KnowledgeablePromptTuning). For the activation and pruning tasks, please follow [
 XAI_Transformers](https://github.com/AmeenAli/XAI_Transformers). We express our heartfelt gratitude to the authors for their outstanding contributions!
+
+## Citation
+If you find our work useful, please consider citing PromptExplainer:
+
+```
+@inproceedings{feng-etal-2024-promptexp,
+    title = "PromptExplainer: Explaining Language Models through Prompt-based Learning",
+    author = "Feng, Zijian  and
+      Zhou, Hanzhang  and
+      Zhu, Zixiao  and
+      Mao, Kezhi",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2024"
+}
+```
