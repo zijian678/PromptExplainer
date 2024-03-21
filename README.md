@@ -38,12 +38,21 @@ XAI_Transformers](https://github.com/AmeenAli/XAI_Transformers). We express our 
 If you find our work useful, please consider citing PromptExplainer:
 
 ```
-@inproceedings{feng-etal-2024-promptexp,
-    title = "PromptExplainer: Explaining Language Models through Prompt-based Learning",
+@inproceedings{feng-etal-2024-promptexplainer,
+    title = "{P}rompt{E}xplainer: Explaining Language Models through Prompt-based Learning",
     author = "Feng, Zijian  and
       Zhou, Hanzhang  and
       Zhu, Zixiao  and
       Mao, Kezhi",
-    booktitle = "Findings of the Association for Computational Linguistics: EACL 2024"
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2024",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-eacl.60",
+    pages = "882--895",
 }
+
 ```
