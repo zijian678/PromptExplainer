@@ -53,6 +53,7 @@ If you find our work useful, please consider citing PromptExplainer:
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2024.findings-eacl.60",
     pages = "882--895",
+    abstract = "Pretrained language models have become workhorses for various natural language processing (NLP) tasks, sparking a growing demand for enhanced interpretability and transparency. However, prevailing explanation methods, such as attention-based and gradient-based strategies, largely rely on linear approximations, potentially causing inaccuracies such as accentuating irrelevant input tokens. To mitigate the issue, we develop PromptExplainer, a novel method for explaining language models through prompt-based learning. PromptExplainer aligns the explanation process with the masked language modeling (MLM) task of pretrained language models and leverages the prompt-based learning framework for explanation generation. It disentangles token representations into the explainable embedding space using the MLM head and extracts discriminative features with a verbalizer to generate class-dependent explanations. Extensive experiments demonstrate that PromptExplainer significantly outperforms state-of-the-art explanation methods.",
 }
 
 ```
